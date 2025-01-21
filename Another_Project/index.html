@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="welcome-section">
+            <input type="text" id="username" placeholder="Enter your name" />
+            <button onclick="setUserName()">Submit</button>
+        </div>
+        <h1 id="welcome-message"></h1>
+        <p id="motivational-quote"></p>
+        <div id="todo-section" style="display:none;">
+            <input type="text" id="new-task" placeholder="Add a new task" />
+            <button onclick="addTask()">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Todo App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
